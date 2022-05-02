@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Page breadcrumb -->
+    <section id="mu-page-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-page-breadcrumb-area">
+                        <h2>Raxbariyat</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="{% url 'schools220:home' %}">Home</a></li>
+                            <li class="active">Raxbariyat</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumb -->
+    <section id="mu-course-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-course-content-area">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <!-- start course content container -->
+                                <div class="mu-course-container mu-blog-archive">
+                                    <div class="row">
+                                        {% for i in object_list %}
+                                            <div class="col-md-4 col-sm-4">
+
+                                                <article class="mu-blog-single-item">
+                                                    <figure class="mu-blog-single-img">
+                                                        <figcaption class="mu-blog-caption">
+                                                            <h4><a href="#">{{ i.fullname }}</a></h4>
+                                                        </figcaption>
+                                                        <a href="#"><img src="{{ i.image.url }}" alt="img"></a>
+                                                    </figure>
+                                                    <div class="mu-blog-meta">
+                                                        <a href="#">{{ i.positions }}</a>
+                                                        <a href="#">{{ i.date|date:'d.m.Y H:i' }}</a>
+                                                        <a href="#">{{ i.phone_number }}</a>
+                                                    </div>
+                                                    <div class="mu-blog-description">
+                                                        <p style="word-wrap: break-word;">{{ i.biografy }}</p>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-left: 600px" class="row">
+        <div class="col-lg-2 offset-5">
+            <ul class="pagination text-center">
+                {% for page in page_obj.paginator.page_range %}
+                    <li class="page-item {% if page == page_obj.number %}active{% endif %}"><a class="page-link"
+                                                                                               href="?page={{ page }}">{{ page }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Page breadcrumb -->
+    <section id="mu-page-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-page-breadcrumb-area">
+                        <h2>Biz haqimizda</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="{% url 'schools220:home' %}">Home</a></li>
+                            <li class="active">Biz haqimizda</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumb -->
+    <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- END SCROLL TOP BUTTON -->
+    <!-- Start about us -->
+    <section id="mu-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-us-area">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-left">
+                                    <!-- Start Title -->
+                                    <div class="mu-title">
+                                        <h2>Biz haqimizda</h2>
+                                    </div>
+                                    <!-- End Title -->
+                                    <p>Toshkent shahar Yunusobod tumanidagi 220-umumta'lim maktabi to`g`risida
+                                        ma`lumot</p>
+                                    <ul>
+                                        <li>Bizning maktabimizga 1971-yilda asos solingan.</li>
+                                        <li>Maktabimiz shahar markazida joylashgan bo`lib hamma shart-sharoitlar bilan
+                                            ta'minlangan.
+                                        </li>
+                                        <li>Bizning maktabimiz 1776 o`rinli bo`lib 2 smenada darslar olib boriladi.</li>
+                                        <li>maktabimizda o`zbek va rus sinflarida dars olib boriladi.</li>
+                                        <li>Maktabimizda 93 nafar pedagog hodimlar faoliyat olib bormoqda.</li>
+                                    </ul>
+                                    <p>Maktabimiz hozirda dunyo va jahon standarti talablariga javob bera oladigan
+                                        darajada
+                                        jihozlangan.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-right">
+                                    <a id="mu-abtus-video" href="https://www.youtube.com/embed/LBaiaoIiMCU"
+                                       target="mutube-video">
+                                        <img src="{% static '220-maktab rasmlari/rasm5.jpg' %}" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about us -->
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="mu-course-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-course-content-area">
+
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    {#                                        <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>#}
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">{{ object.course_name }}</a>
+                                        <span><i class="fa-calendar-days">{{object.day }}</i></span>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+                                    <h4>{{ object.fullname }}</h4>
+                                    <p style="word-wrap: break-word;">{{ object.description }}</p>
+                                    <div class="mu-latest-course-single-contbottom">
+                                        <a class="mu-course-details" href="#">Batafsil</a>
+                                        <span class="mu-course-price" href="#">{{ object.price }}$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
