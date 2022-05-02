@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <div class="container">
+        <section class="cat_product_area p_120">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-9">
+                        <div class="latest_product_inner row">
+                            <div class="col-lg-12 col-md-8 col-sm-6">
+                                {% for i in administration_list %}
+                                    <h3 class="text-center">{{ i.positions }}</h3>
+                                    <article class="row blog_item">
+
+                                        <div class="col-lg-6">
+                                            <div class="blog_post">
+                                                <img src="{{ i.image.url }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="blog_info ">
+                                                <h4>{{ i.fullname }}</h4>
+                                                <ul class="blog_meta list">
+                                                    <li><a href="#"><p> Phone: {{ i.phone }} </p> </a></li>
+                                                    <li><a href="#"><p>Email: {{ i.email }}</p></a>
+                                                    </li>
+                                                    <li><a href="#"><p>Reception of sitizens: {{ i.reseption_of_sitizens }}</p></a></li>
+                                                    <li><a href={% url 'about_committee:functional_duties' pk=i.pk %}>Functional duties</a></li>
+                                                    <li><a href={% url 'about_committee:biography' pk=i.pk %}>Biography</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'layouts/detail.html' %}
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

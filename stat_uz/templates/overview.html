@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <section class="cat_product_area p_120">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-9">
+                        <div class="latest_product_inner row">
+                            <div class="col-lg-12 col-md-8 col-sm-6">
+                                {% for i in object_list %}
+                                    <h3>{{ i.title }}</h3>
+                                    <div>
+                                        <div class="hot_p_item">
+                                            <img class="img-fluid" src="{{ i.image.url }}" alt="" width="900" height="150">
+
+                                        </div>
+                                    </div>
+                                   <p><span>FULLNAME:</span>{{ i.fullname }}</p>
+                                   <p><span>ABBREVIATED NAME:</span>{{ i.abbreviated_name }}</p>
+
+                                    <div id="accordion">
+                                        <div class="card ">
+                                            <div class="card-header " id="headingOne">
+                                                <h3 class="mb-0">
+                                                    <button class="btn btn-link c_color" data-toggle="collapse"
+                                                            data-target="#collapseOne" aria-expanded="false"
+                                                            aria-controls="collapseOne">
+                                                        MAIN FUNCTIONS
+                                                    </button>
+                                                </h3>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                                 data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>{{ i.main_functions }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card ">
+                                            <div class="card-header " id="headingOne">
+                                                <h3 class="mb-0">
+                                                    <button class="btn btn-link c_color" data-toggle="collapse"
+                                                            data-target="#collapseOne" aria-expanded="false"
+                                                            aria-controls="collapseOne">
+                                                        LEGAL BASIS
+                                                    </button>
+                                                </h3>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                                 data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>{{ i.legal_basis }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseTwo" aria-expanded="false"
+                                                            aria-controls="collapseTwo">
+                                                        MAIN GOALS
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                 data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>{{ i.main_goals }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseThree" aria-expanded="false"
+                                                            aria-controls="collapseThree">
+                                                        PRIORITY AREAS
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                 data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>{{ i.priority_areas }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'layouts/detail.html' %}
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

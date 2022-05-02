@@ -1,0 +1,65 @@
+{% load static %}
+<!--================Header Menu Area =================-->
+<header class="header_area">
+    <div class="top_menu row m0">
+        <div class="container">
+            <div class="float-left">
+                <a href="mailto:support@colorlib.com">support@colorlib.com</a>
+                <a href="#">Stat.uz</a>
+            </div>
+            <div class="float-right">
+                <ul class="header_social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">About Committee</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:overview' %}">Overview</a>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:structure' %}">Structure</a>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:administration' %}">Administration</a>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:centraloffice' %}">CentralOffice</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:fightagainstcorruption' %}">FightagAinstCorruption</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:territorialdivisions' %}">TerritorialDivisions</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:board' %}">Board</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:ifsatasr' %}">Ifsatasr</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:internationalpartnership' %}">InternationalPartnership</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:statisticalcouncil' %}">StatisticalCouncil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:publiccouncil' %}">PublicCouncil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:youngpolicy' %}">YoungPolicy</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about_committee:vacancies' %}">Vacancies</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="#" class="cart"><i class="lnr lnr lnr-cart"></i></a></li>
+                        <li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================Header Menu Area =================-->

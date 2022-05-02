@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-26 00:42+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\about_committee\models.py:5 .\about_committee\models.py:23
+#: .\about_committee\models.py:69 .\about_committee\models.py:106
+#: .\about_committee\models.py:122
+msgid "title"
+msgstr ""
+
+#: .\about_committee\models.py:6 .\about_committee\models.py:24
+#: .\about_committee\models.py:36 .\about_committee\models.py:54
+#: .\about_committee\models.py:87
+msgid "image"
+msgstr ""
+
+#: .\about_committee\models.py:7
+msgid "fullanem"
+msgstr ""
+
+#: .\about_committee\models.py:8
+msgid "abreviated_name"
+msgstr ""
+
+#: .\about_committee\models.py:9
+msgid "main_functions"
+msgstr ""
+
+#: .\about_committee\models.py:10
+msgid "legal_basis"
+msgstr ""
+
+#: .\about_committee\models.py:11
+msgid "main_goals"
+msgstr ""
+
+#: .\about_committee\models.py:12
+msgid "priority_areas"
+msgstr ""
+
+#: .\about_committee\models.py:18
+msgid "overview"
+msgstr ""
+
+#: .\about_committee\models.py:19
+msgid "overviews"
+msgstr ""
+
+#: .\about_committee\models.py:30
+msgid "structure"
+msgstr ""
+
+#: .\about_committee\models.py:31
+msgid "structures"
+msgstr ""
+
+#: .\about_committee\models.py:35 .\about_committee\models.py:53
+msgid "positions"
+msgstr ""
+
+#: .\about_committee\models.py:37 .\about_committee\models.py:55
+msgid "fullname"
+msgstr ""
+
+#: .\about_committee\models.py:38 .\about_committee\models.py:56
+#: .\about_committee\models.py:109
+msgid "phone"
+msgstr ""
+
+#: .\about_committee\models.py:39 .\about_committee\models.py:57
+#: .\about_committee\models.py:93 .\about_committee\models.py:111
+msgid "email"
+msgstr ""
+
+#: .\about_committee\models.py:40
+msgid "reseption_of_sitizens"
+msgstr ""
+
+#: .\about_committee\models.py:41
+msgid "functional_duties"
+msgstr ""
+
+#: .\about_committee\models.py:42
+msgid "biography"
+msgstr ""
+
+#: .\about_committee\models.py:48
+msgid "administration"
+msgstr ""
+
+#: .\about_committee\models.py:49
+msgid "administrations"
+msgstr ""
+
+#: .\about_committee\models.py:58
+msgid "departament"
+msgstr ""
+
+#: .\about_committee\models.py:64
+msgid "centraloffice"
+msgstr ""
+
+#: .\about_committee\models.py:65
+msgid "centraloffices"
+msgstr ""
+
+#: .\about_committee\models.py:70 .\about_committee\models.py:123
+msgid "text1"
+msgstr ""
+
+#: .\about_committee\models.py:71 .\about_committee\models.py:124
+msgid "text2"
+msgstr ""
+
+#: .\about_committee\models.py:72 .\about_committee\models.py:125
+msgid "text3"
+msgstr ""
+
+#: .\about_committee\models.py:73
+msgid "text4"
+msgstr ""
+
+#: .\about_committee\models.py:79
+msgid "fightagainstcorruption"
+msgstr ""
+
+#: .\about_committee\models.py:80
+msgid "fightagainstcorruptions"
+msgstr ""
+
+#: .\about_committee\models.py:84
+msgid "region"
+msgstr ""
+
+#: .\about_committee\models.py:85
+msgid "region_departament"
+msgstr ""
+
+#: .\about_committee\models.py:89
+msgid "phone_head"
+msgstr ""
+
+#: .\about_committee\models.py:90
+msgid "phone_1deputy_head"
+msgstr ""
+
+#: .\about_committee\models.py:91
+msgid "phone_deputy_head"
+msgstr ""
+
+#: .\about_committee\models.py:92 .\about_committee\models.py:108
+msgid "address"
+msgstr ""
+
+#: .\about_committee\models.py:94
+msgid "website"
+msgstr ""
+
+#: .\about_committee\models.py:100
+msgid "territorialdivision"
+msgstr ""
+
+#: .\about_committee\models.py:101
+msgid "territorialdivisions"
+msgstr ""
+
+#: .\about_committee\models.py:107 .\about_committee\models.py:137
+msgid "content"
+msgstr ""
+
+#: .\about_committee\models.py:110
+msgid "fax"
+msgstr ""
+
+#: .\about_committee\models.py:117
+msgid "ifsatasr"
+msgstr ""
+
+#: .\about_committee\models.py:118
+msgid "ifsatasrs"
+msgstr ""
+
+#: .\about_committee\models.py:131
+msgid "board"
+msgstr ""
+
+#: .\about_committee\models.py:132
+msgid "boards"
+msgstr ""
+
+#: .\about_committee\models.py:135
+msgid "memorandums"
+msgstr ""
+
+#: .\about_committee\models.py:136
+msgid "news"
+msgstr ""
+
+#: .\about_committee\models.py:143
+msgid "internationalpartnership"
+msgstr ""
+
+#: .\about_committee\models.py:144
+msgid "internationalpartnerships"
+msgstr ""

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <div class="container">
+        <section class="cat_product_area p_120">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-9">
+                        <div class="latest_product_inner row">
+                            <div class="col-lg-12 col-md-8 col-sm-6">
+                                <h3 class="text-center">{{ object.biography }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'layouts/detail.html' %}
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}
